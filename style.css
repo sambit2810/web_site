@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+header{
+    margin: 0%;
+    background-color: rgb(235, 72, 99);
+    width: 150.0rem;
+}
+.header{
+    margin: 0 1.0rem 0 1.0rem;
+    position: sticky;
+    top: 0;
+    
+}
+.h1{
+    text-align: center;
+    font-style: italic;
+    font-size: 4.0rem;
+    color: aqua;
+    margin: 2.0rem 1.0rem 0 1.0rem;
+}
+
+
+.contener{
+    padding: 1.0rem;
+    display: flex;
+}
+.contener div{
+    text-align: center;
+    margin: 0 1.0rem 0 0;
+    background-color: aqua;
+    border: 0.2rem solid greenyellow;
+    border-radius: 1.0rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    /* display: inline-block; */
+}
+.input{
+    margin: auto;
+    background-color: none;
+}
+
+.contener input{
+    font-style: italic;
+    padding: 0 2.0rem;
+    font-size: 1.5rem;
+    margin-left: 70rem;
+    width: 33.6rem;
+    height: 4.0rem;
+    border-radius: 0.9rem;
+    background-color: none;
+}
+
+
+
+.img{
+    width: 150.0rem;
+    height: 45rem;
+    background-color: rgb(189, 183, 183);
+    display: flex;
+    justify-content: center;
+    background-size: 1.0rem 2.0rem;
+    margin-left: 1.0rem;
+    display: flex;
+    align-items: center;
+
+}
+.img img{
+    width: 70rem;
+    height: 40rem;
+}
+
+
+
+.about{
+    display: flex;
+    height: 21.5rem;
+    width: 150rem;
+}
+
+.about-1{
+    margin: 1.0rem;
+    width: 92rem;
+    height: 20rem;
+    /* border: 1px solid black; */
+}
+.about-1 h2{
+    margin-left: 1.0rem;
+    font-size: 3.0rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(255, 69, 178);
+}
+.about-1 p{
+    color: black;
+    margin-top: 0.5rem;
+    margin-left: 1.0rem;
+    font-size: 3.0rem;
+    /* text-align: justify; */
+}
+.about-1 img{
+    display: none;
+}
+.about-2{
+    width: 53.5rem;
+    height: 20rem;
+    margin: 1.0rem;
+    /* border: 1px solid black; */
+    display: flex;
+    
+}
+.about-2 img{
+    height: 20rem;
+    width: 40rem;
+    justify-items: center;
+    margin: auto;
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
+
+}   
+
+
+.service{
+    width: 130rem;
+    margin: 1.5rem;
+}
+.service h2{
+    margin-left: 1.0rem;
+    font-size: 3.0rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(255, 69, 178);
+}
+.service p{
+    margin-top: 0.5rem;
+    margin-left: 1.0rem;
+    font-size: 3.0rem;
+    text-align: justify;
+}
+
+
+
+.product{
+    display: flex;
+}
+
+.product h2{
+    justify-content: center;
+    text-decoration: underline;
+    margin: 1.0rem auto;
+    color: red;
+    font-size: 5.0rem;
+}
+
+/* -------------0000-------- */
+.tab-titles {
+    display: flex;
+    margin: 2.0rem 0 4.0rem;
+    margin-left: 2.5rem ;
+}
+
+.tab-links {
+    font-weight: bold;
+    color: rgb(136, 8, 255);
+    margin-right: 5.0rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 0.3rem;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+/* ------------0000---------- */
+
+/* *******product section********* */
+
+.product-sec{
+    margin: 1.0rem;
+    height: 25rem;
+    width: 150rem;
+    background-color: rgb(226, 220, 212);
+    display: flex;
+    display: none;
+
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px; */
+    /* margin: 50px; */
+}
+.product-sec div{
+    margin: 1.0rem 3.0rem;
+    width: 150rem;
+    height: 8.6rem;
+
+    /* position: relative; */
+    /* overflow: hidden; */
+
+}
+.product-sec div img{
+    width: 11rem;
+    height: 10rem;
+}
+.product-sec.active-tab {
+    display: block;
+    display: flex;
+}
+.product-sec.active-tab div{
+    margin: 1.0rem 3.0rem;
+    width: 10.7rem;
+    height: 8.6rem;
+}
+.product-sec.active-tab div img{
+    border: 0.1rem solid black;
+}
+.product-sec.active-tab div h4{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+    color: rgb(85, 0, 255);
+}
+.product-sec.active-tab div p{
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    color: black;
+    font-weight: bold;
+}
+.product-sec.active-tab div button{
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 2.0rem;
+    padding: 0.3rem;
+    margin: 0.3rem;
+}
+
+/* *******product section********* */
+
+
+
+/* .button{
+
+    height: 30px;
+    margin: 25px 280px;
+
+}
+.button button{
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background-color: rgb(255, 60, 0);
+} */
+
+.oder{
+    width: 150rem;
+    height: 10rem;
+    display: flex;
+    margin-left: 1.5rem;
+}
+.oder form input{
+    color: #fff;
+    width: 25.0rem;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    counter-reset: #fff;
+    font-size: 1.8rem;
+    border-radius:0.6rem;
+}
+
+form .btn2 {
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 2.0rem;
+    margin: 0.3rem;
+    padding: 1.4rem 6.0rem;
+    font-size: 1.8rem;
+    margin-top: 2.0rem;
+    cursor: pointer;
+}
+
+
+
+
+.footer-1{
+    width: 150rem;
+    margin: 1.0rem 1.0rem 0 1.0rem;
+    height: 16.0rem;
+    background-color: rgb(36, 32, 32);
+    display: flex;
+}
+.footer-1 div{
+    font-size: 1.5rem;
+    margin: 1.0rem 5.0rem;
+    color: #fff;
+    width: 18.0rem;
+}
+.footer-1 div p{
+    margin-top: 1.0rem;
+}
+.footer-1 div textarea{
+    width: 18.0rem;
+    height: 5.0rem;
+    margin-top: 1.0rem;
+}
+.footer-1 div button{
+    font-size: 2.0rem;
+    padding: 0.3rem;
+    margin-top: 0.5rem;
+    color: #fff;
+    background-color: #ff004f;
+    border-radius: 1.0rem;
+}
+.fdiv2{
+    width: 150rem;
+    margin-top: 0.2rem;
+    font-size: 2.0rem;
+    margin: 0 1.0rem;
+    height: 3.5rem;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media only screen  and (max-width: 600px) {
+
+    html{
+        font-size: 16.5%;
+    }
+}
+
+
+
+    
+   
+
+   
+   
